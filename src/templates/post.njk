@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/uikit.min.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/style.css' }}">
+    <link rel="stylesheet" href="{{ '/css/prism.css' }}">
+</head>
+
+<body>
+      {% include "partials/header.njk" %}
+    <div class="uk-section">
+        <div class="uk-container uk-container-small uk-container-center uk-background-default uk-padding">
+            {{ content | safe }}
+        </div>
+    </div>
+    {% include "partials/footer.njk" %}
+    <script type='text/javascript' src='{{ '/js/uikit.min.js' }}'></script>
+    <script type='text/javascript' src='{{ '/js/uikit-icons.min.js' }}'></script>
+</body>
+
+</html>
