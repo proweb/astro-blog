@@ -1,9 +1,9 @@
   <div class="uk-section uk-section-small uk-background-primary uk-light">
-        <div class="uk-container uk-container-small uk-container-center">
-            <div class="uk-article-meta">
-            <span uk-icon="calendar" ></span>{{ date | readableDate }}
-            </div>
-            <h1 class=" uk-margin-remove-top">{{ title }}</h1>
+      <div class="uk-container uk-container-small uk-container-center">
+          {# Date #}
 
-        </div>
-    </div>
+              <span uk-icon="calendar"></span><span class="uk-margin-small-left">{{ date | readableDate }}</span>
+
+          <h1 class="uk-margin-remove-top">{{ title }}</h1>
+      </div>
+  </div>

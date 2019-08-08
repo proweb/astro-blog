@@ -1,0 +1,20 @@
+---
+layout: home.njk
+title: "Блог Очередного вебмастера"
+---
+
+<h3 class="uk-h1">Архив блога:</h1>
+<p class="uk-margin-remove-top uk-text-lead">Надеюсь вы найдете для себя что то полезное</p>
+<hr class="uk-divider-icon">
+
+
+
+
+
+<ul class="uk-list uk-list-divider">
+{% for post in collections.posts | reverse %}
+  <li class="uk-h3">
+     <a href="{{ post.url | url }}" class="uk-link-heading"><span class="uk-margin-small-right" uk-icon="icon: file-text; ratio: 2"></span>{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+  </li>
+{% endfor %}
+</ul>
