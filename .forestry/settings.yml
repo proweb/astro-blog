@@ -9,8 +9,8 @@ sections:
   label: Posts
   create: documents
   match: "*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: images
+public_path: "/src"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
