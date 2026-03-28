@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import cursorImage from "../assets/cursor.png";
 ---
 
 <Layout title="Astro">
   <main>
-    <h1>Проект на Astro JS</h1>
-    <p>используем современный фронтенд</p>
-    <p>тест-коммит</p>
+    <h1>Astro и Cursor</h1>
+    <Image src={cursorImage} width="200" alt="Cursor AI logo" />
+    <p>простые сайты с AI-редактором</p>
   </main>
 </Layout>
 
